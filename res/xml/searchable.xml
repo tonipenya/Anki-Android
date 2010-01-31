@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:label="@string/search_label"
+	android:searchSettingsDescription="@string/search_settings_description"
+	android:includeInGlobalSearch="false"
+	android:searchSuggestIntentData="item"
+	android:searchSuggestAuthority="com.ichi2.anki.search">
+</searchable>

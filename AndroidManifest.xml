@@ -26,12 +26,21 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
+            
+            <intent-filter>
+    			<action android:name="android.intent.action.SEARCH" />
+    			<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+            
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
         </activity>
         <activity android:name="DeckPicker" android:label="@string/deckpicker_title" />
         <activity android:name="Preferences" android:label="Preferences" />
         <activity android:name="DeckPreferences" android:label="Deck Preferences" />
         <activity android:name="About" android:label="About" />
         <activity android:name="com.ichi2.veecheck.Notification" android:label="@string/notification_title"/>
+        <activity android:name="CardAction" android:label="Card" />
         <receiver android:name="com.ichi2.veecheck.CheckReceiver">
 			<intent-filter>
 				<action
@@ -53,7 +62,10 @@
 			</intent-filter>
 		</service>
 		<provider android:name="AnkidroidContentProvider" android:authorities="com.ichi2.anki"/>
-    </application>
+		<provider android:name="SearchProvider" android:authorities="com.ichi2.anki.search"
+android:syncable="false" />
+	</application>
+		
     <uses-sdk android:minSdkVersion="3" />
 	<uses-permission android:name="android.permission.VIBRATE" />
 	<uses-permission android:name="android.permission.INTERNET" />

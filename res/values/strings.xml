@@ -53,4 +53,6 @@
 <string name="notification_stop">Don\'t notify me of this update again</string>
 
 <string name="sdcard_missing_message">SD card is unavailable because it is being used as USB storage. Disconnect USB to access your decks.</string>
+<string name="search_label">ankidroid</string>
+<string name="search_settings_description">Ankidroid</string>
 </resources>
